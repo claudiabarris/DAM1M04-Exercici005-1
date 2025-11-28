@@ -460,115 +460,134 @@ body.scrolled .navbar {
 
 
 /* ================================================guia-estil.html ======================================================== */
-/* ===== TIPOGRAFÍA ===== */
-.estilo-container {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
-.demo-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 2.2rem;
-}
-
-.demo-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 1.8rem;
-}
-
-.demo-h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 1.4rem;
-}
-
-.demo-text {
+/* Estilos básicos del cuerpo de la página */
+body {
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
-    letter-spacing: 0.5px;
+    background: #f2f2ff;
+    margin: 0;
 }
 
-/* ===== BASELINE ===== */
+
+/* ===== CONTENEDOR ===== */
+/* Caja que contiene todo el contenido centrado */
+.estilo-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 15px;
+}
+
+
+/* ===== TARJETAS ===== */
+/* Caja blanca tipo "card" para separar secciones */
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+/* Títulos dentro de las tarjetas */
+.card h2 {
+    margin-bottom: 10px;
+}
+/* Texto de introducción con color más suave */
+.intro {
+    color: #555;
+}
+
+/* ===== TIPOGRAFÍA ===== */
+/* Estilos para diferentes tipos de títulos de prueba */
+.demo-h1 { 
+    font-family: 'Montserrat'; /* Fuente específica para los títulos */
+    font-size: 2rem; /* Tamaño grande */
+    font-weight: 700; /* Más grueso */
+}
+.demo-h2 { 
+    font-family: 'Montserrat'; 
+    font-size: 1.6rem; /* Un poco más pequeño */
+    font-weight: 600; 
+}
+.demo-h3 { 
+    font-family: 'Montserrat'; 
+    font-size: 1.25rem; /* Más pequeño aún */
+    font-weight: 400; /* Más delgado */
+}
+/* Texto normal de ejemplo */
+.demo-text {
+    margin-top: 10px; /* Separación superior */
+    color: #444; /* Tonalidad gris para lectura suave */
+}
+
+/* ===== ICONO TEXTO ===== */
+/* Contenedor para alinear icono + texto */
 .baseline-demo {
     display: flex;
-    align-items: baseline;
-    gap: 10px;
-    font-size: 1.1rem;
+    align-items: center;
+    gap: 8px;
 }
-
+/* Estilo del icono rojo */
 .baseline-icon {
     font-size: 28px;
+    color: #e63946;
 }
 
-/* ===== ESCALA TIPOGRÁFICA ===== */
-.t-xxs { font-size: 0.75rem; }
-.t-xs  { font-size: 0.875rem; }
-.t-base { font-size: 1rem; }
-.t-lg  { font-size: 1.25rem; }
-.t-xl  { font-size: 1.5rem; }
+/* ===== ESCALA ===== */
+/* Clases listas para usar en cualquier texto */
+.t-xxs { font-size: 0.75rem; } /* Muy pequeño */
+.t-xs  { font-size: 0.875rem; } /* Pequeño */
+.t-base { font-size: 1rem; } /* Normal */
+.t-lg  { font-size: 1.25rem; } /* Grande */
+.t-xl  { font-size: 1.5rem; } /* Muy grande */
 
-/* ===== ICONOS ===== */
-.icon-muestra {
-    margin: 20px 0;
-}
-
-.icon-muestra span {
-    margin-right: 15px;
-}
-
-/* ===== BOTONES CON ICONOS ===== */
+/* ===== BOTONES ===== */
+/* Botón con icono dentro */
 .btn-icon {
-    padding: 10px 20px;
+    padding: 12px 20px;
     background: #6a4df5;
-    color: white;
     border: none;
+    color: white;
+    font-weight: 600;
     border-radius: 8px;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 7px;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease;
 }
-
+/* Efecto hover cuando pasas el ratón */
 .btn-icon:hover {
     background: #533ed1;
-    transform: scale(1.05);
 }
-
+/* Enlaces con icono */
 .link-icon {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
-    margin-left: 20px;
+    color: #6a4df5;
+    margin-left: 10px;
     text-decoration: none;
     font-weight: 600;
-    color: #6a4df5;
-    transition: color 0.3s ease, letter-spacing 0.3s ease;
 }
-
+/* Hover para los enlaces */
 .link-icon:hover {
-    color: #533ed1;
-    letter-spacing: 1px;
+    text-decoration: underline;
 }
 
-/* ===== TABLA DE COLORES ===== */
+/* ===== TABLA COLORES ===== */
+/* Tabla básica */
+
 .tabla-colores {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
 }
+/* Celdas y cabeceras */
 
 .tabla-colores th,
 .tabla-colores td {
-    border: 1px solid #ccc;
-    padding: 12px;
-    text-align: left;
+    border: 1px solid #ddd;
+    padding: 10px;
 }
+/* Cabecera de la tabla */
 
 .tabla-colores th {
-    background: #eee;
+    background: #e9e7ff;
 }
+
